@@ -71,20 +71,21 @@
     top: 70px;
 }
 .main-section,
-.uslugi-section{
+.uslugi-section, 
+.cennik-section{
     max-width: 1200px;
     display: flex;
     margin: 0 auto;
     flex-direction: column;
-    
 }
 
 .uslugi-section {
-    transform: translateY(500px);
+    padding-top: 500px;
 }
 
 .main-section h1,
-.uslugi-text h1 {
+.uslugi-text h1,
+.cennik-section h1 {
     color: #F5F5F5;
 }
 
@@ -97,7 +98,8 @@
 
 .fryzjerstwo  h1,
 .u-krola h1,
-.uslugi-text h1 {
+.uslugi-text h1,
+.cennik-text h1 {
     font-family: "Fira Code";
     font-weight: 800;
     font-size: 7em;
@@ -130,7 +132,8 @@
     width: 400px;
 }
 
-.uslugi-text p {
+.uslugi-text p,
+.cennik-text p {
     max-width: 1200px;
     font-family: "Open Sans";
     color: #A6A6A6;
@@ -184,24 +187,68 @@
     height: auto;
 }
 
-.strzyzenie{
+.strzyzenie, .koloryzacja, .stylizacja, .specjalistyczne, .pielegnacja, .barbering {
+    width: 450px;
     padding-top: 10vh;
+    background-color: transparent;
 }
-.strzyzenie h2 {
+.strzyzenie h2, 
+.koloryzacja h2,
+.stylizacja h2,
+.specjalistyczne h2,
+.pielegnacja h2,
+.barbering h2 {
     color: #F5F5F5;
     font-family: "Fira Code";
     font-size: 2.75em;
+    background-color: transparent;
+    position: relative;
+    z-index: 2;
 }
 
-.strzyzenie ul {
+.strzyzenie ul,
+.koloryzacja ul,
+.stylizacja ul,
+.specjalistyczne ul,
+.pielegnacja ul,
+.barbering ul {
     padding-top: 20px;
+    background-color: transparent;
+    position: relative;
+    z-index: 2;
 }
 
-.strzyzenie li {
+.strzyzenie li,
+.koloryzacja li,
+.stylizacja li,
+.specjalistyczne li,
+.pielegnacja li,
+.barbering li{
     font-family: "Open Sans";
     color: #A6A6A6;
     font-size: 24px;
     width: 400px;
     text-decoration: none;
     list-style: none;
+    background-color: transparent;
+    position: relative;
+    z-index: 2;
+}
+
+.uslugi-main {
+    display: flex;
+    /* max-width: 1200px; */
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: space-between;
+    /* background-image: url(img/back.png); */
+}
+
+.back-img {
+    position: absolute;
+    right: 0;
+    left: 1;
+    top: calc(200%);
+    z-index: 1;
+    height: auto;
 }
