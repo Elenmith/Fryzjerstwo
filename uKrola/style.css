@@ -252,3 +252,18 @@
     z-index: 1;
     height: auto;
 }
+
+.cennik-section {
+    display: flex;
+    padding-top: 10vh;
+    position: relative;
+    z-index: 2;
+    background-color: transparent;
+}
+
+.cennik-text {
+    background-color: transparent;
+}
+.cennik-section h1, .cennik-section p {
+    background-color: transparent;
+}
