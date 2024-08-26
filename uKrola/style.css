@@ -85,12 +85,14 @@
 
 .main-section h1,
 .uslugi-text h1,
-.cennik-section h1 {
+.cennik-section h1,
+.kontakt-text h1 {
     color: #F5F5F5;
 }
 
 .fryzjerstwo,
-.u-krola {
+.u-krola,
+.kontakt-main {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -99,7 +101,8 @@
 .fryzjerstwo  h1,
 .u-krola h1,
 .uslugi-text h1,
-.cennik-text h1 {
+.cennik-text h1,
+.kontakt-text h1  {
     font-family: "Fira Code";
     font-weight: 800;
     font-size: 7em;
@@ -134,7 +137,8 @@
 
 .uslugi-text p,
 .cennik-text p,
-.cennik-main p {
+.cennik-main p,
+.kontakt-main p {
     max-width: 1200px;
     font-family: "Open Sans";
     color: #A6A6A6;
@@ -150,6 +154,7 @@
 }
 .highlight-2 {
     color: #ffffff;
+    background-color: transparent;
 }
 
 .photos-section {
@@ -242,7 +247,7 @@
     z-index: 2;
 }
 
-.uslugi-main {
+.uslugi-main{
     display: flex;
     /* max-width: 1200px; */
     flex-wrap: wrap;
@@ -258,6 +263,15 @@
     top: calc(200%);
     z-index: 1;
     height: auto;
+}
+.back-img2 {
+    position: absolute;
+    left: 0;
+    right: 1;
+    z-index: 1;
+    top: calc(470%);
+    height: auto;
+    width: 100%;
 }
 
 .cennik-section {
@@ -283,7 +297,7 @@
     padding-top: 2em;
 }
 
-.cennik-main {
+.cennik-main{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -293,4 +307,23 @@
 
 .cennik-main p{
     line-height: 2em;
+}
+
+.kontakt-main {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+.kontakt-text{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.kontakt-text h1 {
+    padding-top: 10vh;
+    position: relative;
+    background-color: transparent;
+    z-index: 2;
 }
